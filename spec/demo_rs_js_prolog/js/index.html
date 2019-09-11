@@ -1,0 +1,31 @@
+<!--
+  Demo: Simulates a chat with a RiveScriptS bot using websockets and voice (if available)
+  loriacarlos@gmail.com
+  EIF400 II-2019 
+  To start a server (requires python)
+  start_server.bat
+-->
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>WebSocket Chat Demo</title>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="./css/main_style.css">
+  
+  <!-- See https://github.com/aichaos/rivescript-js -->
+  <!-- <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script> -->
+  <script src="./lib/rivescript.min.js"  ></script> <!-- Local copy -->
+  <script type="module" src="./js/rs_chat_simulator.js" language="javascript" type="text/javascript"></script>
+  </head>
+  <body>
+      <div id="main">
+          <h1>Worst Chatroom Demo Ever</h1>
+          <div id="clock">
+                Clock never stops running: <span id="time"></span>
+          </div>
+          <br/>
+          <button id="clickme">Always clickable</button>
+          <div id="output"></div>
+      </div>
+  </body>

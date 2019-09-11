@@ -1,0 +1,19 @@
+body {
+      background-size: 100% 100%;
+      background-color: lightgrey;
+}
+body, html {
+    height: 100%;
+ }
+
+#main{
+   margin-left:15%;
+}
+#time{
+   font-size:125%;
+}
+.red{color:red}
+.green{color:green}
+.blue{color:blue}
+.big{font-size:150%}
+.underline{text-decoration:underline;}
