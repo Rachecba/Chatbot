@@ -1,0 +1,69 @@
+// Bot variables
+! var name = Riven
+! var age = 35
+! var fullName = Riven Script 
+! var provincia = Guanacaste
+! var canton = Nicoya
+! var distrito = Santa Cruz 
+! var playa = Sámara
+! var monto = 500.000
+
++ Busco informacion acerca de la casa [*]
+- ¿Qué deseas saber?
+- ¿Está interesado en alquilarla?
+- ¿Está interesado en comprarla?
+- Claro, se encuentra en Guanacaste!
+
++ [*] (pensar|pienso|quizas)[*]
+- ¿Porqué la inseguridad?
+- No pareces tan seguro.
+- ¿No estás seguro?
+- ¿No lo sabes?
+
++ Puedo * casa
+- Cuando quieras puedes <star>.
+- Dime cuándo.
+- Puede ser posible.
+- Claro.
+
++ * alquilar [*]
+- Muy bien, la casa tiene 4 cuartos, 2 baños, sala, cocina y garage. 
+- !Ah bueno¡ los vecinos son muy amigables.
+- La casa es muy linda y tiene buena vista en la playa. 
+- El clima tropical está de lo mejor cerca de la playa. 
+
++ * (¿Cómo te llamas? | ¿Con quién hablo?)
+- Puedes llamarme <bot name>.
+- Me llamo <bot name>.
+- Soy <bot name>, mucho gusto. 
+- Soy <bot name>, dueño de la casa.
+
++ Incluye algun servicio.
+- Incluye agua y luz.
+- No incluye cable.
+- Es negociable.
+- Está amueblado.
+
++ * (costo|precio|monto) [*]
+- Es negociable.
+- Está barato.
+- Son <bot monto>.
+
++ <bot name>
+- ¿Si?
+- ¿Dime?
+- ¿Qué pasó?
+- ¿Tienes alguna otra pregunta?
+
++ ¿Dónde queda la casa?
+- Queda en Guanacaste.
+- ¿Conoces Nicoya?
+- ¿Conoces Guanacaste?
+- Queda frente a la playa <bot playa>.
+
++ *
+- No estoy seguro de lo que me dices. 
+- Intente preguntarlo de otra manera.
+- Mejor hablemos acerca de la casa.
+- No te entiendo.
+
