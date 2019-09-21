@@ -7,12 +7,75 @@
 ! var distrito = Santa Cruz 
 ! var playa = Sámara
 ! var monto = 500.000
+! var distancia = 3 Km
+! var tiempoDistancia  = 1 h 30 min 
+! var cocheraCasaTam = 10X10
 
 + Busco informacion acerca de la casa [*]
 - ¿Qué deseas saber?
 - ¿Está interesado en alquilarla?
 - ¿Está interesado en comprarla?
 - Claro, se encuentra en Guanacaste!
+
++ mi nommbre es *
+- gusto en conocerte <set nameUser=<star>>
+- es un gusto <star>, mi nombre es <bot name>
+- pura visa <star>
+- Es un {random}lindo|feo{/random} nombre
+
++ *montaña*
+- Tenemos diferentes opciones en nuestro catalogo para alquiler y compra.
+- Hay varios miradores cerca del centro de <bot distrito>
+- Yo prefiero la montaña antes que la playa.
+- El frio es la mejor opcion.
+
++ (Hola|buenas) 
+- Buenas en que te puedo ayudar?
+- hola todo bien, y usted?
+- bien y tu?
+- eh estado mejor
+ 
++ [*] estoy bien [*]
+- que bueno me alegro
+- eso suena genial
+- como no estarlo con este tiempo
+- eh estado mejor
+
++  cuanto duro[*]
+- Del centro de <bot distrito> unos <bot distancia>.
+- unos <var tiempoDistancia>
+- la distancia no es importante, la casa es una mancion.
+- no vas a querer salir de la casa, no te preocupes.
+
++ actividades *
+- pueses ir a <bot playa> a nadar
+- hay acceso a internet, no vas a necesitar nada mas {weight= 10}
+- el ambiente en la noches es bastante bueno
+- hay gimnacios y cines en el centro de <bot distrito>
+
++ me gusta *
+- a mi tambien me gusta <star>
+- <star> es un poco aburrido{weight =20}
+- siempre que hay guaro me gusta eso {weight =10}
+- prefiero tener internet ilimitado a cosot de <star>
+
++ *cochera*
+- hay campo suficiente para 3 carros.
+- el espacio es de <bot cocheraCasaTam>
+- cuantos carros tienes?
+- hay parqueo extra cerca de <bot playa>.
+
++ tengo # (colones|dolares) *
+- es mucha plata.
+- con eso te alzanca para un par de picaritas.
+- la casa cuesta mas que eso.
+- deberias conseguir mas dinero.
+
++ *vecinos*
+- la propiedad es grande, no te van a molestar.
+- vas a necesitar comprar tu azucar.
+- es dificil que te topes vecinos.
+- de seguro son buenos para la fiesta.
 
 + [*] (pensar|pienso|quizas)[*]
 - ¿Porqué la inseguridad?
