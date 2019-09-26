@@ -1,9 +1,9 @@
 // Bot variables
 
 ! version = 2.0
-! var name = Riven
-! var age = 35
-! var fullName = Riven Script 
+! var name = Charlie
+! var age = 3500
+! var fullName = Charlie Script 
 ! var provincia = Guanacaste
 ! var canton = Nicoya
 ! var distrito = Santa Cruz 
@@ -13,43 +13,49 @@
 ! var tiempoDistancia  = 1 h 30 min 
 ! var cocheraCasaTam = 10X10
 
-+ casa
-- que deseas saber?
-- esta interesado en alquilarla?
-- esta interesado en comprarla?
+! sub á = a
+! sub é = e
+! sub í = i
+! sub ó = o
+! sub ú = u
+
++ [*]busco informacion
+- ¿que deseas saber?
+- ¿esta interesado en alquilar?
+- ¿quiere comprarla o alquilarla?
 - claro, se encuentra en Guanacaste!
 
-+ mi nombre es *
-- gusto en conocerte <set nameUser=<star>>
++ (mi nombre es|me llamo) *
+- gusto en conocerte <set name=<star>>
 - es un gusto <star>, mi nombre es <bot name>
 - pura vida <star>
-- es un {random}lindo|feo{/random} nombre
+- todo bien <star>?
 
-+ montania
++ [*]me gusta las montanias
 - tenemos diferentes opciones en nuestro catalogo para alquiler y compra.
 - Hay varios miradores cerca del centro de <bot distrito>
 - Yo prefiero la montaña antes que la playa.
 - El frio es la mejor opcion.
 
-+ ( hola | buenas ) 
++ (hola|buenas)
 - Buenas en que te puedo ayudar?
 - hola todo bien, y usted?
 - bien y tu?
 - eh estado mejor
  
-+ [] estoy bien []
++ [*]estoy bien[*]
 - que bueno me alegro
 - eso suena genial
 - como no estarlo con este tiempo
 - eh estado mejor
 
-+ cuanto duro [*]
++ cuanto duro[*]
 - Del centro de <bot distrito> unos <bot distancia>.
-- unos <var tiempoDistancia>
+- depende, si vas en carro es mas rapido
 - la distancia no es importante, la casa es una mancion.
 - no vas a querer salir de la casa, no te preocupes.
 
-+ actividades *
++ [*]actividades
 - pueses ir a <bot playa> a nadar
 - hay acceso a internet, no vas a necesitar nada mas {weight= 10}
 - el ambiente en la noches es bastante bueno
@@ -61,25 +67,25 @@
 - siempre que hay guaro me gusta eso {weight =10}
 - prefiero tener internet ilimitado a cosot de <star>
 
-+ cochera
++ [*]cochera[*]
 - hay campo suficiente para 3 carros.
 - el espacio es de <bot cocheraCasaTam>
 - cuantos carros tienes?
 - hay parqueo extra cerca de <bot playa>.
 
-+ tengo # ( colones | dolares ) *
-- es mucha plata.
-- con eso te alzanca para un par de picaritas.
++ [*]tengo # (colones|dolares) 
+* <bot monto> > <star> => deberias regresar con mas dinero.
+* <bot monto> <= <star> => es mas que sifciente, deberias venir a ver la casa.
 - la casa cuesta mas que eso.
 - deberias conseguir mas dinero.
 
-+ vecinos
++ [*]vecinos[*]
 - la propiedad es grande, no te van a molestar.
 - vas a necesitar comprar tu azucar.
 - es dificil que te topes vecinos.
 - de seguro son buenos para la fiesta.
 
-+ [*] ( pensar | pienso | quizas )[*]
++ [*] (pensar|pienso|quizas) [*]
 - ¿Porqué la inseguridad?
 - No pareces tan seguro.
 - ¿No estás seguro?
@@ -91,25 +97,25 @@
 - Puede ser posible.
 - Claro.
 
-+ * alquilar [*]
++ [*]informacion de la casa[*]
 - Muy bien, la casa tiene 4 cuartos, 2 baños, sala, cocina y garage. 
 - !Ah bueno¡ los vecinos son muy amigables.
 - La casa es muy linda y tiene buena vista en la playa. 
 - El clima tropical está de lo mejor cerca de la playa. 
 
-+ * ( como te llamas | con quien hablo )
++ (como te llamas|con quien hablo)
 - Puedes llamarme <bot name>.
 - Me llamo <bot name>.
 - Soy <bot name>, mucho gusto. 
 - Soy <bot name>, dueño de la casa.
 
-+ incluye algun servicio
-- Incluye agua y luz.
++ * incluye algun servicio
+- <star> Incluye agua y luz.
 - No incluye cable.
 - Es negociable.
 - Está amueblado.
 
-+ * ( costo | precio | monto ) [*]
++ * (costo|precio|monto) [*]
 - Es negociable.
 - Está barato.
 - Son <bot monto>.
@@ -120,11 +126,11 @@
 - ¿Qué pasó?
 - ¿Tienes alguna otra pregunta?
 
-+ donde queda la casa
-- Queda en Guanacaste.
++ donde (queda|esta|se ubica) la casa
+- <star> en Guanacaste.
 - ¿Conoces Nicoya?
 - ¿Conoces Guanacaste?
-- Queda frente a la playa <bot playa>
+- <star> frente a la playa <bot playa>
 
 + *
 - No estoy seguro de lo que me dices. 
