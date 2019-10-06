@@ -13,8 +13,7 @@ swipl echo-ws-server
 :- use_module(library(http/websocket)).
 :- use_module(library(http/http_client)).
 
-:- initialization(start_server)
-.
+:- initialization(start_server).
 
 node_endpoint('http://localhost:6000').
 %%%%%%%%%%%%%%%%%%%%% Configure handlers %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
