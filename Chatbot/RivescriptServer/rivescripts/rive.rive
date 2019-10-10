@@ -19,17 +19,17 @@
 ! sub ó = o
 ! sub ú = u
 
-+ [*]busco informacion
-- ¿que deseas saber?
-- ¿esta interesado en alquilar?
-- ¿quiere comprarla o alquilarla?
++ [*] busco informacion
+- que deseas saber?
+- esta interesado en alquilar?
+- quiere comprarla o alquilarla?
 - claro, se encuentra en Guanacaste!
 
 + (mi nombre es|me llamo) *
-- gusto en conocerte <set name=<star>>
-- es un gusto <star>, mi nombre es <bot name>
-- pura vida <star>
-- todo bien <star>?
+- gusto en conocerte <set name=<star2>>
+- es un gusto <star2>, mi nombre es <bot name>
+- pura vida <star2>
+- todo bien <star2>?
 
 + [*]me gusta las montanias
 - tenemos diferentes opciones en nuestro catalogo para alquiler y compra.
@@ -63,7 +63,7 @@
 
 + me gusta *
 - a mi tambien me gusta <star>
-- <star> es un poco aburrido{weight =20}
+- <star> es un poco aburrido {weight =20}
 - siempre que hay guaro me gusta eso {weight =10}
 - prefiero tener internet ilimitado a cosot de <star>
 

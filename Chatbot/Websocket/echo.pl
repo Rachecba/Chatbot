@@ -12,6 +12,7 @@ swipl echo-ws-server
 :- use_module(library(http/http_files)).
 :- use_module(library(http/websocket)).
 :- use_module(library(http/http_client)).
+:- use_module(rsParser).
 
 :- initialization(start_server).
 
@@ -27,6 +28,12 @@ node_endpoint('http://localhost:6000').
                 http_upgrade_to_websocket(echo, []),
                 [spawn([])])
 .
+
+:- http_handler(root(admin), 
+                http_upgrade_to_websocket(parsing, []),
+                [spawn([])])
+.
+
 % returns de bot response to the query
 echo(WebSocket) :-
     ws_receive(WebSocket, Message),
@@ -37,6 +44,15 @@ echo(WebSocket) :-
         echo(WebSocket)
     )
 .
+
+parsing(Request) :-
+   ws_receive(Request, Message),
+   writeln(Message.data),
+   open('output.txt',write, Stream),
+   write(Stream, Message.data),
+   close(Stream)
+   .
+
 
 post_msg(Msg, Resp) :-
   node_endpoint(NodeEndPoint),
