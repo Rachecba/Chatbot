@@ -50,7 +50,9 @@ parsing(Request) :-
    writeln(Message.data),
    open('output.txt',write, Stream),
    write(Stream, Message.data),
-   close(Stream)
+   close(Stream),
+   ws_send(text('ok')),
+   parsing(Request)
    .
 
 
