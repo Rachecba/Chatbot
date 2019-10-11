@@ -3,6 +3,12 @@
   font-size: 11pt;
 }
 
+
+html, body{
+    height: 100%;
+    background: linear-gradient(0deg, #B7D9E3 30.47%, rgba(255, 255, 255, 0) 98.37%), #FFFFFF;
+}
+
 .chat {
   width: 478px;
   height: 594px;
@@ -79,16 +85,21 @@
   border: 1px solid black;
 }
 
-.admin{
-  background-color: cadetblue;
+#admin h3{
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+}
 
-  position: relative;
-  display: inherit;
-    top: 80px;
+#admin textarea, button{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#admin form{
+    padding-left: 30%;
 }
 
 .about{
-    background-color: grey;
     position: relative;
     display: inherit;
     top: 80px;
@@ -97,7 +108,7 @@
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: #03A7A7;
 }
 
 .tab button {
@@ -108,20 +119,22 @@
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  font-family: 'Bitter', serif;
+  font-size: 20px;
 }
 
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #6DCDCD;
 }
 
 .tab button.active {
-  background-color: #ccc;
+  background-color: #63C3C3;
 }
 
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+
   border-top: none;
 }
 
@@ -132,4 +145,20 @@
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+#tituloAbout{
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+}
+
+.subtituloAbout{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+}
+
+#about p, li{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 15px;
 }
