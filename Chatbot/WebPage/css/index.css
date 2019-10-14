@@ -5,8 +5,8 @@
 
 
 html, body{
-    height: 100%;
     background: linear-gradient(0deg, #B7D9E3 30.47%, rgba(255, 255, 255, 0) 98.37%), #FFFFFF;
+    background-repeat: no-repeat;   
 }
 
 .chat {
@@ -161,4 +161,9 @@ html, body{
 #about p, li{
     font-family: 'Libre Franklin', sans-serif;
     font-size: 15px;
+}
+
+iframe{
+    width: 30%;
+    height: 300px;
 }

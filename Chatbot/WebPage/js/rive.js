@@ -18,7 +18,7 @@ function init_socket(){ // Binds socket events
 function init_socketAdmin(){ // Binds socket events 
     websocketAdmin           = new WebSocket(WS_URIADMIN);
     websocketAdmin.onclose   = function(evt) { onClose(evt) };
-    websocketAdmin.onmessage = function(evt) { onMessage(evt) };
+    websocketAdmin.onmessage = function(evt) { onMessageAdmin(evt) };
     websocketAdmin.onerror   = function(evt) { onError(evt) };
 }
 
@@ -96,6 +96,17 @@ function onMessage(evt){ // Handles socket message
     console.log(evt)
     // Simulates a bot message
     botReplyResponse(evt);
+}
+
+function onMessageAdmin(evt){ // Handles socket message
+    console.log('Message Arrived');
+    console.log(evt)
+    // Simulates a bot message
+    checkMessage(evt);
+}
+
+function checkMessage(evt){
+    
 }
 
 function onError(evt){
