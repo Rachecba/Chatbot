@@ -1,6 +1,8 @@
 /* 
-    Nombre: Ramson Gu Wu 
-    Id: 207440006 
+    Nombre: Rachel Basulto Arzola
+            Ramson Gu Wu 
+            Sergio Jimenez Madrigal
+            Antony Oviedo Alfaro
     Grupo # 2
     Horario: 1pm
 */
@@ -154,7 +156,7 @@ isQuote('"').
 isBackSlash('\\')          % \
 .
 isOper(O)    :- member(O, ['=', '<', '>', '*', '-', '+', '/', '\\', '.', '(', ')']), !.
-isOper(O)    :- member(O, ['{', '}', '&', '|', '%', '!', ';', ',', '#']), !.
+isOper(O)    :- member(O, ['{', '}', '&', '|', '%', '!', ';', ',', '#', '?', '¿']), !.
 isOper(O)    :- member(O, ['@', ':']), !.
 
 doubleOper('!', '='). % !=

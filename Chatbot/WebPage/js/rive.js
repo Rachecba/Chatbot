@@ -1,3 +1,11 @@
+/* 
+    Nombre: Rachel Basulto Arzola
+            Ramson Gu Wu 
+            Sergio Jimenez Madrigal
+            Antony Oviedo Alfaro
+    Grupo # 2
+    Horario: 1pm
+*/
 let bot = new RiveScript();
 const message_container = document.querySelector('.messages');
 const form = document.querySelector('form');
@@ -105,8 +113,13 @@ function onMessageAdmin(evt){ // Handles socket message
     checkMessage(evt);
 }
 
-function checkMessage(evt){
-    
+function checkMessage(message){
+    if(message.data === 'ok') {
+        alert('Archivo parseado y guardado con éxito')
+    }
+    else {
+        alert('Archivo no pudo ser parseado')
+    }
 }
 
 function onError(evt){

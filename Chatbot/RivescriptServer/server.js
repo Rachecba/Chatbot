@@ -1,6 +1,10 @@
-/*
- loriacarlos@gmail.com
- EIF400 II-2019
+/* 
+    Nombre: Rachel Basulto Arzola
+            Ramson Gu Wu 
+            Sergio Jimenez Madrigal
+            Antony Oviedo Alfaro
+    Grupo # 2
+    Horario: 1pm
 */
 const http = require('http');
 const RiveScript = require('./js/rivescript')

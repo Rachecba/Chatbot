@@ -1,7 +1,10 @@
 /*
-Socket server
-loriacarlos@gmail.com
-EIF400 II-2019
+    Nombre: Rachel Basulto Arzola
+            Ramson Gu Wu 
+            Sergio Jimenez Madrigal
+            Antony Oviedo Alfaro
+    Grupo # 2
+    Horario: 1pm
 Para arrancar (lo hace en puerto 3000)
 swipl echo-ws-server
 */

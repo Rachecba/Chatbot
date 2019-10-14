@@ -1,3 +1,11 @@
+/* 
+    Nombre: Rachel Basulto Arzola
+            Ramson Gu Wu 
+            Sergio Jimenez Madrigal
+            Antony Oviedo Alfaro
+    Grupo # 2
+    Horario: 1pm
+*/}
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
 :- use_module(library(http/http_files)).
