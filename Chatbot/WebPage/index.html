@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Simple ChatAI using RiveScript.js</title>
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Bitter|Libre+Franklin|Source+Code+Pro&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -29,10 +31,11 @@
     
     <div id="admin" class="tabcontent">
         <h3>Administración del proyecto</h3>
-        <form action="#">
-            <textarea rows="15" cols="70">
+        <form>
+            <textarea rows="20" cols="80">
             </textarea>
-            <button type="submit" onclick="SendRiveFile()">Enviar</button>
+            <br>
+            <button type="button" onclick="SendRiveFile()">Enviar</button>
         </form>
     </div>
     
@@ -50,11 +53,38 @@
         <h3 class="subtituloAbout">Curso:</h3>
         <p>Paradigmas de Programación</p>
     </div>
-
+    
+    <div id="video">
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/38sL6pADCog?autoplay=1">
+        </iframe>
+    </div>
+    
+    
   <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
   <script type="text/javascript" src="js/rive.js"></script>
     
     <script>
+        
+    document.getElementById("defaultOpen").click();
+
+    function openPage(evt, page) {
+
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(page).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+        
     </script>
 
 </body>

@@ -29,6 +29,7 @@ parse(File, ProgAst) :-
 .
 parse(File, _) :-
     Msg = 'Parsing fails. File: ~s. Last Seen Line Number: ~d',
+    writeln(Msg),
     line_number(N),
     format(atom(A), Msg, [File, N]),
     throw(syntaxError(A, ''))    
